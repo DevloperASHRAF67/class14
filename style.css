@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+.widthfix{
+    max-width: 1100px;
+    margin: auto;
+}
+a,p,h1,h2,h3,h4{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Anek Devanagari', sans-serif;
+}
+p{
+    font-size: 22px;
+}
+img{
+    max-width: 100%;
+}
+
+/* menu */
+.menu{
+    text-align: center;
+}
+.menu ul {
+    margin-top: 20px;
+}
+.menu ul li{
+    display: inline-block;
+    background: rgba(99, 163, 253, 0.918);
+    padding:5px 20px;
+    border-radius: 3px;
+}
+.menu ul li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #fafafa;
+    top: 27px;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin:left;
+    transition: 0.5s;
+}
+.menu ul li a:hover::after{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleX(1);
+}
+/* conteiner */
+.container{
+    background:  rgba(99, 163, 253, 0.918);
+    text-align: center;
+    margin-top:20px ;
+    color: #fafafa;
+    padding: 80px 0px 120px 0px;
+}
+.container h1{
+    padding-bottom: 60px;
+    font-size: 40px;
+}
+.container p{
+    padding: 30px 0px;
+    font-weight: 600;
+}
+.container .button{
+    background:rgb(251, 252, 253);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.container .button::after{
+    content: "";
+    background: red;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: .4s;
+    z-index: -1;  
+}
+.container .button:hover::after{
+    width: 100%;
+}
+
+
+/* about */
+.about h1{
+    text-align: center;
+    padding-top: 90px;
+}
+.about p{
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.div{
+    display: inline-block;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+.img img{
+    width: 250px;
+    height: 250px;
+    transition: 1s;
+}
+.p1:hover{
+    transform: rotate(360deg) scale(1.5);
+}
+
+.p2:hover{
+    transform: rotate(30deg) scale(1.1); 
+}
+.p3:hover {
+    transform: rotate(-30deg) scale(1.1);
+}
+.p4:hover{
+    transform: scale(1.1);
+}
+/* footer */
+.footer h1{
+    padding-top: 100px;
+    text-align: center;
+}
+.footer p{
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 90px;
+}
+.butt a{
+    color: #fafafa;
+    background: rgb(0, 0, 0);
+    padding: 10px 20px;
+    transition: .8s;
+    
+}
+.butt a:hover{
+    background:  rgba(99, 163, 253, 0.918);
+    color: black;
+}
+.b1{
+    display: inline-block;
+    margin-left: 220px;
+    transform: rotate(30deg);
+    transition: .8s;
+}
+.b2{
+    display: inline-block;
+    margin-left: 220px;
+    transition: .8s;
+    
+}
+.b3{
+    display: inline-block;
+    margin-left: 220px;
+    transform: rotate(-30deg);
+    transition: .8s;
+}
+.b1:hover{
+    transform: rotate(0deg);
+}
+.b2:hover{
+    transform: scale(1.2);
+}
+.b3:hover{
+    transform: rotate(0deg);
+}
+.butt{
+    padding-bottom: 50px;
+}
+/* footer bottom */
+.footer-bottom {
+    padding: 40px 0px;
+    background: rgb(86, 85, 85);
+    text-align: center;
+    color: #fafafa;
+}
+.footer-bottom span{
+    color: red;
+    text-decoration: underline;
+}
